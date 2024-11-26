@@ -84,7 +84,7 @@ export default function Nav() {
               {/* Logo Image  */}
               <img
                 className=" w-10 h-10 "
-                src="Images\logo.png"
+                src="\Images\logo.png"
               />
               {/* Logo Text  */}
               <span>Stelary</span>
