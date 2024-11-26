@@ -4,34 +4,33 @@ import myContext from "../../context/data/myContext";
 function HeroSection() {
   const context = useContext(myContext);
   const { mode } = context;
+
   return (
     <section
-      style={{ background: mode === "dark" ? "rgb(30, 41, 59)" : "#30336b" }}
+      style={{ background: mode === "dark" ? "#2c2c2c" : "#fff9e6", // Dark mode: đen nhạt, Light mode: vàng nhạt
+        color: mode === "dark" ? "white" : "black", }} // Màu vàng nhạt cho cả chế độ sáng và tối
     >
-      {/* Hero Section  */}
+      {/* Hero Section */}
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        {/* Main Content  */}
+        {/* Main Content */}
         <main>
           <div className="text-center">
             <div className="mb-2">
-              {/* Image  */}
+              {/* Image */}
               <div className="flex justify-center">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png"
-                  alt=""
-                />
+                <img src="Images/logo.png" alt="Logo" />
               </div>
 
-              {/* Text  */}
-              <h1 className=" text-3xl text-white font-bold">Devknus</h1>
+              {/* Text */}
+              <h1 className="text-3xl text-gray-800 font-bold" style={{ color: mode === "dark" ? "white" : "black" }}>Stelary</h1>
             </div>
 
-            {/* Paragraph  */}
+            {/* Paragraph */}
             <p
-              style={{ color: mode === "dark" ? "white" : "white" }}
-              className="sm:text-3xl text-xl font-extralight sm:mx-auto "
+              style={{ color: mode === "dark" ? "white" : "black" }} // Text chuyển thành đen để nổi bật trên nền vàng nhạt
+              className="sm:text-3xl text-xl font-extralight sm:mx-auto"
             >
-              Here are some blogs and tutorials contributed by Devknus.
+              Here are some blogs contributed by Nhom 11, showcasing our team’s journey, experiences, and insights.
             </p>
           </div>
         </main>

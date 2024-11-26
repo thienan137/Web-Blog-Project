@@ -29,7 +29,7 @@ export default function Nav() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
-        style={{ color: mode === "dark" ? "white" : "white" }}
+        style={{ color: mode === "dark" ? "white" : "black" }}
       >
         <Link to={"/"} className="flex items-center">
           Home
@@ -40,7 +40,7 @@ export default function Nav() {
         variant="small"
         color="blue-gray"
         className="p-1 font-normal"
-        style={{ color: mode === "dark" ? "white" : "white" }}
+        style={{ color: mode === "dark" ? "white" : "black" }}
       >
         <Link to={"/allblogs"} className="flex items-center">
           Blogs
@@ -52,7 +52,7 @@ export default function Nav() {
           variant="small"
           color="blue-gray"
           className="p-1 font-normal"
-          style={{ color: mode === "dark" ? "white" : "white" }}
+          style={{ color: mode === "dark" ? "white" : "black" }}
         >
           <Link to={"/adminlogin"} className="flex items-center">
             Admin Login
@@ -69,7 +69,8 @@ export default function Nav() {
       {/* Navbar  */}
       <Navbar
         className="sticky inset-0 z-20 h-max max-w-full border-none rounded-none py-2 px-4 lg:px-8 lg:py-2"
-        style={{ background: mode === "dark" ? "rgb(30, 41, 59)" : "#30336b" }}
+        style={{ background: mode === "dark" ? "#2c2c2c" : "#fff9e6", // Dark mode: đen nhạt, Light mode: vàng nhạt
+          color: mode === "dark" ? "white" : "black", }}
       >
         {/* Desktop View  */}
         <div className="flex items-center justify-between text-blue-gray-900">
@@ -78,15 +79,15 @@ export default function Nav() {
             <Typography
               as="a"
               className="mr-4 cursor-pointer py-1.5 text-xl font-bold flex gap-2 items-center"
-              style={{ color: mode === "dark" ? "white" : "white" }}
+              style={{ color: mode === "dark" ? "white" : "black" }}
             >
               {/* Logo Image  */}
               <img
                 className=" w-10 h-10 "
-                src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png"
+                src="Images\logo.png"
               />
               {/* Logo Text  */}
-              <span>Devknus</span>
+              <span>Stelary</span>
             </Typography>
           </Link>
 
@@ -97,13 +98,13 @@ export default function Nav() {
 
             {/* Search Icon */}
             <div>
-              {/* <AiOutlineSearch size={20} color="white" /> */}
-              <SearchDialog />
+              {/* <AiOutlineSearch size={20} color="black" /> */}
+              <SearchDialog  />
             </div>
 
             {/* Share Icon */}
             <div className="hidden lg:block">
-              {/* <AiOutlineShareAlt size={20} color="white" /> */}
+              {/* <AiOutlineShareAlt size={20} color="black" /> */}
               <ShareDialogBox />
             </div>
 

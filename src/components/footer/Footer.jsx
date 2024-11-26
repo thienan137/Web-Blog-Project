@@ -16,23 +16,23 @@ function Footer() {
           {/* logo  */}
           <img
             className="w-10"
-            src="https://cdn-icons-png.flaticon.com/128/3685/3685253.png"
+            src="\Images\logo.png"
             alt="logo"
           />
           {/* logo text  */}
-          <span className="ml-3 text-xl text-white">Devknus</span>
+          <span className="ml-3 text-xl text-white">Stelary</span>
         </div>
 
         {/* items  */}
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2023 Devknus —
+          © 2023 Nhóm 11 —
           <a
             href="https://twitter.com/knyttneve"
             className="text-gray-600 ml-1"
             rel="noopener noreferrer"
             target="_blank"
           >
-            @devknus
+            @Nhom11
           </a>
         </p>
 

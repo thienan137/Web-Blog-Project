@@ -17,7 +17,7 @@ export default function SearchDialog() {
     <Fragment>
       {/* Search Icon  */}
       <div onClick={handleOpen}>
-        <AiOutlineSearch size={20} color="white" />
+        <AiOutlineSearch size={20} style={{ color: mode === "dark" ? "white" : "black" }} />
       </div>
       {/* Dialog  */}
       <Dialog
@@ -80,7 +80,7 @@ export default function SearchDialog() {
 
           {/* Heading  */}
           <div className=" text-center">
-            <h1 className=" text-gray-600">Powered By Devknus</h1>
+            <h1 className=" text-gray-600">Powered By Nhom11</h1>
           </div>
         </DialogBody>
       </Dialog>
