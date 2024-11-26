@@ -46,7 +46,7 @@ function BlogInfo() {
     return { __html: c };
   }
 
-
+//*Comment making
   const [fullName, setFullName] = useState('');
   const [commentText, setCommentText] = useState('');
 
@@ -176,6 +176,7 @@ function BlogInfo() {
             commentText={commentText}
             setcommentText={setCommentText}
             allComment={allComment}
+            setAllComment={setAllComment} // Truyền hàm setAllComment xuống
             fullName={fullName}
             setFullName={setFullName}
           />
