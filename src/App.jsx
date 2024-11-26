@@ -53,7 +53,7 @@ export default App;
 
 export const ProtectedRouteForAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem("admin"));
-  if (admin?.user?.email === "a@gmail.com") {
+  if (admin?.user?.email === "admin@gmail.com") {
     return children;
   } else {
     return <Navigate to={"/adminlogin"} />;
