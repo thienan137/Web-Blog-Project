@@ -78,7 +78,7 @@ function BlogInfo() {
 
 
   const [allComment, setAllComment] = useState([]);
-
+//Comment Ui update
   const getcomment = async () => {
     try {
       const q = query(

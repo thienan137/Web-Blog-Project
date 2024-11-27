@@ -36,7 +36,7 @@ function Dashboard() {
               className="text-center font-bold text-2xl mb-2"
               style={{ color: mode === "dark" ? "white" : "black" }}
             >
-              Chau Gia Kien
+              Admin
             </h1>
 
             <h2
@@ -49,7 +49,7 @@ function Dashboard() {
               style={{ color: mode === "dark" ? "white" : "black" }}
               className="font-semibold"
             >
-              kiengiachau@gmail.com
+              Admin@gmail.com
             </h2>
             <h2
               style={{ color: mode === "dark" ? "white" : "black" }}
