@@ -39,7 +39,10 @@ function CreateBlog() {
 
   //* Upload Image Function
   const uploadImage = () => {
-    if (!thumbnail) return;
+    if (!thumbnail){
+      toast.error("Please upload your thumbnail");
+      return;
+    };
     const imageRef = ref(storage, `blogimage/${thumbnail.name}`);
     uploadBytes(imageRef, thumbnail).then((snapshot) => {
       getDownloadURL(snapshot.ref).then((url) => {
